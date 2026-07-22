@@ -6,7 +6,26 @@
     <title>My First Website</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <!-- OneSignal Push Notification SDK -->
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+
+    <script>
+        window.OneSignalDeferred = window.OneSignalDeferred || [];
+
+        OneSignalDeferred.push(function(OneSignal) {
+
+            OneSignal.init({
+
+                appId: "112c6d41-5e43-44b4-9ef1-b245739f48b5"
+            });
+
+        });
+    </script>
+
+
 </head>
+
 <body>
 
     <h1>Welcome to My Website</h1>
@@ -15,8 +34,8 @@
 
     <button id="btn">Click Me</button>
 
+
     <script src="script.js"></script>
 
 </body>
 </html>
-
